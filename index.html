@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Edoardo Filippucci" />
+    <title>Edoardo Filippucci | Design Your Style</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./languages/javascript/contact-form.js"></script>
+
+    <link id="site-css" rel="stylesheet" href="./languages/css/style.css" />
+    <!-- <link
+      id="konami-css"
+      rel="stylesheet"
+      type="text/css"
+      href="./languages/css/retro.css"
+    /> -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="" />
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav class="main-nav">
+        <!-- <div class="logo">
+          <img src="" alt="" />
+        </div> -->
+        <ul>
+          <li>
+            <a href="#" class="active" data-translate="home">Home</a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link" data-translate="services"
+              >Servizi</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-translate="contact"
+              >Contatti</a
+            >
+          </li>
+          <!-- <li>
+            <div class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas theme-icon"></i>
+            </div>
+          </li> -->
+          <!-- <li class="language-dropdown">
+            <a href="#" data-translate="languages">Lingue</a>
+            <i class="fa-solid fa-language"></i>
+            <ul class="language-list">
+              <li><a href="#" data-lang="it">Italiano</a></li>
+              <li><a href="#" data-lang="en">English</a></li>
+              <li><a href="#" data-lang="fr">Français</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <img src="./assets/images/hamburger.png" class="img-hamburger" alt="" />
+      </label>
+    </header>
+    <section class="home" id="home">
+      <div class="text-container-home">
+        <div class="text-container-home-box1">
+          <h1>
+            Ciao, Sono
+            <span class="hacked home-span1" data-value="EDOARDO">Edoardo</span
+            ><br /><span class="home-span2">#</span>Freelancer
+          </h1>
+          <!-- <h3>
+            Con il codice come pennello e il web come tela, creiamo insieme
+            un'opera d'arte digitale che lascia il segno.
+          </h3> -->
+
+          <a href="#contact" class="home-button">Assumimi</a>
+        </div>
+      </div>
+      <!-- <div class="double"> -->
+      <!-- <div class="svg-home-container">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#675CFF"
+              d="M49,-66.7C62.8,-57.5,72.6,-42.2,78.8,-25.1C84.9,-8.1,87.4,10.6,80.2,23.9C72.9,37.3,55.8,45.3,40.8,50.9C25.9,56.5,12.9,59.6,0.3,59.3C-12.4,58.9,-24.9,55.1,-38.2,49C-51.5,42.9,-65.7,34.4,-72.2,21.7C-78.7,9,-77.6,-7.9,-69.5,-19.4C-61.4,-30.9,-46.4,-37.1,-33.7,-46.6C-20.9,-56.2,-10.5,-69.1,3.6,-74.1C17.7,-79,35.3,-75.9,49,-66.7Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div> -->
+      <div class="image-container-home">
+        <img
+          src="./assets/images/home-image.png"
+          alt=""
+          class="home-image-avatar"
+          loading="lazy"
+        />
+      </div>
+      <!-- </div> -->
+    </section>
+    <section class="services" id="services">
+      <div class="service-card-container">
+        <h1>Servizi</h1>
+        <div class="row">
+          <div class="service">
+            <i class="bx bx-code-block"></i>
+            <h2>Web Design</h2>
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+          </div>
+          <div class="service">
+            <i class="bx bx-server"></i>
+            <h2>Web Hosting</h2>
+          </div>
+          <div class="service">
+            <i class="bx bx-bar-chart-square"></i>
+            <h2>SEO</h2>
+          </div>
+          <div class="service">
+            <i class="bx bx-shopping-bag"></i>
+            <h2>E-Commerce</h2>
+          </div>
+          <div class="service">
+            <i class="bx bxl-meta"></i>
+            <h2>Social Media Menager</h2>
+          </div>
+          <div class="service">
+            <i class="bx bx-images"></i>
+            <h2>Colorize Photos</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-form">
+        <h1>Contatti</h1>
+        <div class="container">
+          <div class="main">
+            <div class="content">
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Inserisci il tuo nome"
+                  autocomplete="off"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="name"
+                  id="email"
+                  placeholder="Inserisci la tua email"
+                  autocomplete="off"
+                  required
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Scrivi il tuo messaggio"
+                  required
+                ></textarea>
+                <button onclick="sendMessage();" type="submit" class="btn">
+                  Send <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+            <div class="form-img">
+              <img src="./assets/images/contact-image.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h2>
+        <span class="home-span3">©</span> 2023 | CopyRight Edoardo FIlippucci
+      </h2>
+    </footer>
+
+    <button
+      class="scroll-to-top"
+      id="scrollToTopButton"
+      onclick="scrollToTop()"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- <div id="popup">
+      <div id="popup-content">
+        <h2>Popup personalizzato</h2>
+      </div>
+    </div> -->
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Emailjs CONTACT FORM -->
+    <!-- <script>
+      function sendMessage() {
+        (function () {
+          emailjs.init("243oEnGgapN7766cT"); //Account Public Key
+        })();
+
+        var serviceID = "service_42ulwyx"; //Email Service ID
+        var templateID = "template_mkd08lm"; //Email Template ID
+
+        var params = {
+          sendername: document.querySelector("#name").value,
+          senderemail: document.querySelector("#email").value,
+          message: document.querySelector("#message").value,
+        };
+
+        emailjs
+          .send(serviceID, templateID, params)
+          .then((res) => {
+            alert(
+              "Thank You, " +
+                params["sendername"] +
+                "! Your message has been sent."
+            );
+          })
+          .catch();
+      }
+    </script> -->
+
+    <script src="./languages/javascript/toggle-theme.js"></script>
+    <script src="./languages/javascript/loader.js"></script>
+    <script src="./languages/javascript/to-top.js"></script>
+    <script src="./languages/javascript/copy-block.js"></script>
+    <script src="./languages/javascript/drag&drop-block.js"></script>
+    <script src="./languages/javascript/rightclick-menu-block.js"></script>
+    <script src="./languages/javascript/home-height.js"></script>
+    <!-- <script src="./languages/javascript/butter.js"></script> -->
+    <script src="./languages/javascript/language-switch.js"></script>
+    <!-- <script src="./languages/javascript/retro-style.js"></script> -->
+    <!-- <script src="./languages/javascript/hacked.js"></script> -->
+  </body>
+</html>
