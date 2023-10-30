@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Edoardo Filippucci" />
     <title>Edoardo Filippucci | Design Your Style</title>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="./languages/javascript/contact-form.js"></script>
 
     <link id="site-css" rel="stylesheet" href="./languages/css/style.css" />
     <!-- <link
@@ -150,7 +148,7 @@
         <div class="container">
           <div class="main">
             <div class="content">
-              <form action="#" method="post">
+              <form action="https://formspree.io/f/meqnbqja" method="post">
                 <input
                   type="text"
                   name="name"
@@ -162,20 +160,21 @@
 
                 <input
                   type="email"
-                  name="name"
+                  name="email"
                   id="email"
                   placeholder="Inserisci la tua email"
                   autocomplete="off"
                   required
                 />
+
                 <textarea
                   name="message"
                   id="message"
                   placeholder="Scrivi il tuo messaggio"
                   required
                 ></textarea>
-                <button onclick="sendMessage();" type="submit" class="btn">
-                  Send <i class="fas fa-paper-plane"></i>
+                <button type="submit" class="btn">
+                  Invia <i class="fas fa-paper-plane"></i>
                 </button>
               </form>
             </div>
@@ -215,34 +214,14 @@
       feather.replace();
     </script>
 
-    <!-- Emailjs CONTACT FORM -->
-    <!-- <script>
-      function sendMessage() {
-        (function () {
-          emailjs.init("243oEnGgapN7766cT"); //Account Public Key
-        })();
-
-        var serviceID = "service_42ulwyx"; //Email Service ID
-        var templateID = "template_mkd08lm"; //Email Template ID
-
-        var params = {
-          sendername: document.querySelector("#name").value,
-          senderemail: document.querySelector("#email").value,
-          message: document.querySelector("#message").value,
-        };
-
-        emailjs
-          .send(serviceID, templateID, params)
-          .then((res) => {
-            alert(
-              "Thank You, " +
-                params["sendername"] +
-                "! Your message has been sent."
-            );
-          })
-          .catch();
-      }
-    </script> -->
+    <!-- form -->
+    <script>
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) {
+          form.reset();
+        }
+      };
+    </script>
 
     <script src="./languages/javascript/toggle-theme.js"></script>
     <script src="./languages/javascript/loader.js"></script>
