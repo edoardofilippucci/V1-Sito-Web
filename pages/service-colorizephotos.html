@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Edoardo Filippucci" />
+    <title>Edoardo Filippucci | PHOTOS</title>
+
+    <link id="site-css" rel="stylesheet" href="./../languages/css/style.css" />
+    <!-- <link
+      id="konami-css"
+      rel="stylesheet"
+      type="text/css"
+      href="./languages/css/retro.css"
+    /> -->
+    <link
+      rel="shortcut icon"
+      href="./../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./../assets/images/logo.png" alt="" />
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav class="main-nav">
+        <!-- <div class="logo">
+          <img src="" alt="" />
+        </div> -->
+        <ul>
+          <li>
+            <a href="./../index.html" class="active" data-translate="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./../index.html#services"
+              class="nav-link"
+              data-translate="services"
+              >Servizi</a
+            >
+          </li>
+          <li>
+            <a
+              href="./../index.html#contact"
+              class="nav-link"
+              data-translate="contact"
+              >Contatti</a
+            >
+          </li>
+          <!-- <li>
+            <div class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas theme-icon"></i>
+            </div>
+          </li> -->
+          <!-- <li class="language-dropdown">
+            <a href="#" data-translate="languages">Lingue</a>
+            <i class="fa-solid fa-language"></i>
+            <ul class="language-list">
+              <li><a href="#" data-lang="it">Italiano</a></li>
+              <li><a href="#" data-lang="en">English</a></li>
+              <li><a href="#" data-lang="fr">Français</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <img
+          src="./../assets/images/hamburger.png"
+          class="img-hamburger"
+          alt=""
+        />
+      </label>
+    </header>
+    <section class="home" id="home"></section>
+
+    <footer class="footer">
+      <h2>
+        <span class="home-span3">©</span> 2023 | CopyRight Edoardo FIlippucci
+      </h2>
+    </footer>
+
+    <button
+      class="scroll-to-top"
+      id="scrollToTopButton"
+      onclick="scrollToTop()"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- <div id="popup">
+      <div id="popup-content">
+        <h2>Popup personalizzato</h2>
+      </div>
+    </div> -->
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- <script>
+      feather.replace();
+    </script> -->
+
+    <!-- close menu click out the element -->
+
+    <script src="./../languages/javascript/toggle-theme.js"></script>
+    <script src="./../languages/javascript/loader.js"></script>
+    <script src="./../languages/javascript/to-top.js"></script>
+    <script src="./../languages/javascript/copy-block.js"></script>
+    <script src="./../languages/javascript/drag&drop-block.js"></script>
+    <script src="./../languages/javascript/rightclick-menu-block.js"></script>
+    <script src="./../languages/javascript/home-height.js"></script>
+    <!-- <script src="./languages/javascript/butter.js"></script> -->
+    <script src="./../languages/javascript/language-switch.js"></script>
+    <!-- <script src="./languages/javascript/retro-style.js"></script> -->
+    <!-- <script src="./languages/javascript/hacked.js"></script> -->
+  </body>
+</html>

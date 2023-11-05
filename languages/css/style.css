@@ -2,10 +2,10 @@
 
 --LEGENDA--
 *work in progress* 
-+ elementi design home e pagine
-+ easter egg
-+ sezione contact
++ pagine servizi
 + menu (togliere spazio a sx, chiudere menu cliccando fuori dal nav stesso oltre che da icona)
++ easter egg
++ elementi design home e pagine
 
 - TO DO LIST--------------*/
 
@@ -243,7 +243,7 @@ nav ul li a.active {
 section.home {
   height: auto;
   width: 80%;
-  padding: 0 40px;
+  padding: 0 0px;
   /* margin-top: 70px; */
   margin-top: 0px;
   position: relative;
@@ -261,7 +261,7 @@ section.home {
 }
 
 .text-container-home h1 {
-  font-size: 65px;
+  font-size: 50px;
   color: var(--light-text-color);
   width: 100%;
 }
@@ -274,7 +274,7 @@ section.home {
 }
 
 .text-container-home .home-span1 {
-  font-size: 65px;
+  font-size: 50px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px var(--light-text-black-color);
   text-transform: uppercase;
@@ -365,11 +365,14 @@ section.services {
   width: 100%;
   height: 100vh;
   padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .service-card-container h1 {
   text-align: center;
-  padding-top: 10%;
+  /* padding-top: 10%; */
   margin-bottom: 60px;
   position: relative;
   font-size: 65px;
@@ -381,11 +384,12 @@ section.services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
+  margin-top: -100px;
 }
 
 .service {
   text-align: center;
-  padding: 25px 10px;
+  padding: 15px 10px;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
@@ -397,6 +401,10 @@ section.services {
   font-size: 40px;
   margin-bottom: 10px;
   color: var(--primary-color);
+}
+
+.service i.external-link {
+  font-size: 20px;
 }
 
 .service h2 {
@@ -414,6 +422,10 @@ section.services {
 
 .service:hover i {
   color: #ffffff;
+}
+
+.service:hover i.external-link {
+  color: var(--light-text-color);
 }
 
 .service:hover h2 {
@@ -516,7 +528,7 @@ textarea {
   outline: none;
   margin-bottom: 15px;
   font-stretch: 16px;
-  color: var(--light-text-color);
+  color: var(--light-text-color) !important;
   padding: 14px 20px;
   width: 100%;
   display: inline-block;
@@ -548,6 +560,188 @@ textarea {
   transition: 0.3s ease;
   padding: 14px 15px;
   border: 1px solid var(--primary-color);
+}
+
+/* -------------- WEBDESIGN SECTION -------------- */
+
+section.web-design-animated {
+  height: auto;
+  width: 80%;
+  padding: 0 0px;
+  margin-top: 0px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--light-background-color);
+}
+
+.animated-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.colored-text {
+  color: var(--primary-color);
+}
+
+.animated-text {
+  font-size: 50px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.animated-text span.typing-text {
+  position: relative;
+}
+
+.animated-text span.typing-text::before {
+  content: "il tuo brand";
+  color: var(--primary-color);
+  animation: words 20s infinite;
+}
+
+.animated-text span.typing-text::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: var(--light-background-color);
+  border-left: 2px solid var(--primary-color);
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "il tuo brand";
+  }
+  21%,
+  40% {
+    content: "la tua azienda";
+  }
+  41%,
+  60% {
+    content: "il tuo progetto";
+  }
+  61%,
+  80% {
+    content: "il tuo sogno";
+  }
+  81%,
+  100% {
+    content: "chi sei";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  margin-bottom: 100px;
+  height: 44px;
+  width: 44px;
+  color: #343f4f;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover {
+  background: #f2f2f2;
+}
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel img {
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
 }
 
 /* -------------- TOGGLE THEME -------------- */
@@ -710,6 +904,9 @@ body.dark-theme .form-img {
 
 /* -------------- FOOTER -------------- */
 .footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: auto;
   background-color: var(--light-menu-background-color);

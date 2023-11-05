@@ -33,7 +33,9 @@
   <body>
     <header class="header">
       <div class="logo">
+        <!-- <a href="#"> -->
         <img src="./assets/images/logo.png" alt="" />
+        <!-- </a> -->
       </div>
       <input type="checkbox" id="nav_check" hidden />
       <nav class="main-nav">
@@ -87,7 +89,7 @@
             un'opera d'arte digitale che lascia il segno.
           </h3> -->
 
-          <a href="#contact" class="home-button">Assumimi</a>
+          <a href="#contact" class="home-button">Lavora con me</a>
         </div>
       </div>
       <!-- <div class="double"> -->
@@ -114,31 +116,48 @@
       <div class="service-card-container">
         <h1>Servizi</h1>
         <div class="row">
+          <!-- <a href="./pages/service-webdesign.html"> -->
           <div class="service">
             <i class="bx bx-code-block"></i>
             <h2>Web Design</h2>
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            <!-- <i class="external-link bx bx-link-external"></i> -->
           </div>
-          <div class="service">
-            <i class="bx bx-server"></i>
-            <h2>Web Hosting</h2>
-          </div>
+          <!-- </a> -->
+          <!-- <a href="./pages/service-seo.html"> -->
           <div class="service">
             <i class="bx bx-bar-chart-square"></i>
             <h2>SEO</h2>
+            <!-- <i class="external-link bx bx-link-external"></i> -->
           </div>
+          <!-- </a> -->
+          <!-- <a href="./pages/service-ecommerce.html"> -->
           <div class="service">
             <i class="bx bx-shopping-bag"></i>
             <h2>E-Commerce</h2>
+            <!-- <i class="external-link bx bx-link-external"></i> -->
           </div>
+          <!-- </a> -->
+          <!-- <a href="./pages/service-socialmediamenager.html"> -->
           <div class="service">
             <i class="bx bxl-meta"></i>
             <h2>Social Media Menager</h2>
+            <!-- <i class="external-link bx bx-link-external"></i> -->
           </div>
+          <!-- </a> -->
+          <!-- <a href="./pages/service-copywriting.html"> -->
+          <div class="service">
+            <i class="bx bx-server"></i>
+            <h2>CopyWriting</h2>
+            <!-- <i class="external-link bx bx-link-external"></i> -->
+          </div>
+          <!-- </a> -->
+          <!-- <a href="./pages/service-colorizephotos.html"> -->
           <div class="service">
             <i class="bx bx-images"></i>
             <h2>Colorize Photos</h2>
+            <!-- <i class="external-link bx bx-link-external"></i> -->
           </div>
+          <!-- </a> -->
         </div>
       </div>
     </section>
@@ -148,7 +167,11 @@
         <div class="container">
           <div class="main">
             <div class="content">
-              <form action="https://formspree.io/f/meqnbqja" method="post">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/meqnbqja"
+                method="post"
+              >
                 <input
                   type="text"
                   name="name"
@@ -170,7 +193,7 @@
                 <textarea
                   name="message"
                   id="message"
-                  placeholder="Scrivi il tuo messaggio"
+                  placeholder="Scrivi la tua idea e Richiedi un preventivo Gratuito"
                   required
                 ></textarea>
                 <button type="submit" class="btn">
@@ -210,9 +233,11 @@
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
 
-    <script>
+    <!-- <script>
       feather.replace();
-    </script>
+    </script> -->
+
+    <!-- close menu click out the element -->
 
     <!-- form -->
     <script>
