@@ -1234,8 +1234,13 @@ body.dark-theme .scroll-to-top {
   }
 
   .service-card-container {
+    padding-top: 30px;
     height: auto;
     min-height: 100vh;
+  }
+
+  .row {
+    padding-top: 100px;
   }
 
   section.contact {
