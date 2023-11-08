@@ -37,8 +37,8 @@
         <img src="./assets/images/logo.png" alt="" />
         <!-- </a> -->
       </div>
-      <input type="checkbox" id="nav_check" hidden />
-      <nav class="main-nav">
+      <!-- <input type="checkbox" id="nav_check" hidden /> -->
+      <nav class="main-nav" id="sidebar">
         <!-- <div class="logo">
           <img src="" alt="" />
         </div> -->
@@ -72,9 +72,10 @@
           </li> -->
         </ul>
       </nav>
-      <label for="nav_check" class="hamburger">
+      <div id="toggleMenu"></div>
+      <!-- <label for="nav_check" class="hamburger">
         <img src="./assets/images/hamburger.png" class="img-hamburger" alt="" />
-      </label>
+      </label> -->
     </header>
     <section class="home" id="home">
       <div class="text-container-home">
@@ -237,7 +238,23 @@
       feather.replace();
     </script> -->
 
-    <!-- close menu click out the element -->
+    <!-- close menu click out the nav -->
+    <script>
+      const toggleMenu = document.getElementById("toggleMenu");
+      const sidebar = document.getElementById("sidebar");
+
+      document.onclick = function (e) {
+        if (e.target.id !== "sidebar" && e.target.id !== "toggleMenu") {
+          toggleMenu.classList.remove("active");
+          sidebar.classList.remove("active");
+        }
+      };
+
+      toggleMenu.onclick = function () {
+        toggleMenu.classList.toggle("active");
+        sidebar.classList.toggle("active");
+      };
+    </script>
 
     <!-- form -->
     <script>

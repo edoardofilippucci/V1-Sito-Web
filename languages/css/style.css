@@ -74,7 +74,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--light-scrollbar-thumb-color);
+  background-color: var(--primary-color);
   border: 3px solid transparent;
 }
 
@@ -1095,7 +1095,85 @@ body.dark-theme .scroll-to-top {
     width: 55px;
   }
 
-  nav {
+  /* PROVA */
+
+  #toggleMenu {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #toggleMenu::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 4px;
+    background: var(--primary-color);
+    transform: translateY(-5px);
+    transition: 0.2s;
+  }
+
+  #toggleMenu::after {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--primary-color);
+    transform: translateY(5px);
+    transition: 0.2s;
+  }
+
+  #toggleMenu.active::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  #toggleMenu.active::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 265px;
+    height: 100vh;
+    background: #fefefe;
+    transition: 0.5s;
+  }
+
+  #sidebar.active {
+    left: -20px;
+  }
+
+  #sidebar ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 70px;
+  }
+
+  #sidebar ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+  #sidebar ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+
+  /* FINE PROVA */
+
+  /* nav {
     position: fixed;
     left: -300px;
     top: 0;
@@ -1133,7 +1211,7 @@ body.dark-theme .scroll-to-top {
 
   nav ul li {
     z-index: 50;
-  }
+  } */
 
   .hamburger {
     display: block;
