@@ -1113,6 +1113,7 @@ body.dark-theme .scroll-to-top {
     position: absolute;
     width: 33px;
     height: 4px;
+    border-radius: 2px;
     background: var(--primary-color);
     transform: translateY(-5px);
     transition: 0.2s;
@@ -1242,16 +1243,18 @@ body.dark-theme .scroll-to-top {
     margin-top: 18px;
   }
 
-  .scroll-to-top {
+  /* .scroll-to-top {
+    display: none;
     border-radius: 7px;
     width: 32px;
     height: 32px;
-  }
+  } */
 
-  .scroll-to-top i {
+  /* .scroll-to-top i {
+    display: none;
     font-size: 16px;
     color: var(--primary-color);
-  }
+  } */
 
   /* prova .section elemento */
   .section {
