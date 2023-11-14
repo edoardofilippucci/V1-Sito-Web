@@ -370,6 +370,15 @@ section.services {
   justify-content: space-around;
 }
 
+.work-service-card-container {
+  width: 100%;
+  height: auto;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .service-card-container h1 {
   text-align: center;
   position: relative;
