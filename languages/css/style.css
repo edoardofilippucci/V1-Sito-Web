@@ -382,7 +382,7 @@ section.services {
 .service-card-container h1 {
   text-align: center;
   position: relative;
-  font-size: 65px;
+  font-size: 35px;
   font-weight: 600;
   color: var(--light-menu-color);
 }
@@ -434,7 +434,7 @@ section.services {
 .service h2 {
   font-weight: 600;
   margin-bottom: 8px;
-  font-size: 30px;
+  font-size: 27px;
   color: var(--light-text-color);
 }
 
@@ -1487,9 +1487,9 @@ body.dark-theme .scroll-to-top {
     border-radius: 7px;
     width: 32px;
     height: 32px;
-  } */
+  }
 
-  /* .scroll-to-top i {
+  .scroll-to-top i {
     display: none;
     font-size: 16px;
     color: var(--primary-color);
@@ -1548,7 +1548,11 @@ body.dark-theme .scroll-to-top {
   }
 
   .text-container-home-box1 h1 {
-    font-size: 45px;
+    font-size: 27px;
+  }
+
+  .hacked home-span1 {
+    font-size: 35px;
   }
 
   section.services {
@@ -1558,7 +1562,7 @@ body.dark-theme .scroll-to-top {
     width: 90%;
     padding: 0 20px;
     padding-top: 50px;
-    margin-top: 70px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1590,8 +1594,13 @@ body.dark-theme .scroll-to-top {
     width: 90%;
     padding: 0 20px;
     padding-top: 50px;
-    margin-top: 40px;
+    margin-top: 0px;
     display: flex;
+  }
+
+  .container {
+    width: 325px;
+    height: auto;
   }
 
   .contact-form .main {
